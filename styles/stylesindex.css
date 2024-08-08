@@ -1,0 +1,272 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+/* Styles of the paragraph on the main image */
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+ul, ol{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styles to insert the main image in the top */
+.container{
+    width: auto;
+    min-height: 100vh;
+    background-size:cover;
+    background-position:center;
+    background-image: linear-gradient(rgba(224, 109, 109, 0),rgba(224, 109, 109, 0)),url(images/home/front.png);
+    border: 5px solid black;
+} 
+
+nav{
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 20px; 
+}
+
+.content h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content p {
+    font-size: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.container1{
+    background-color: #f7f7f7;
+    padding: 4%;
+    padding-top: 2%;
+    border: #000000 2px solid;
+    margin: 3%;
+}
+
+.topic{
+    background-color: #ebebeb;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.6%;
+    font-size: 19.3px;
+    border: #000000 1px solid;
+}
+
+.container1 li,
+.container1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+main{
+    margin: 4%;
+    margin-top: 0%;
+}
+
+.image-style{
+    width: 32.7%;
+    border: #000000 solid 2px;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+/* Style of the header */
+
+h2,h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+}
+
+/* styles of the logo on the top */
+.igg{
+    height: 90px;
+    width: 90px;
+    margin-top: 10px;
+}
+
+/* Styles related to the page navigations */
+.guide ul{
+    list-style-type: none;
+    background-color: #000000;
+    padding: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.guide a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 35px;
+    display: block;
+    text-align: center;
+}
+
+.guide a:hover{
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+}
+
+/* Styles related to the dropdown list in the head part */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.02);
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 17px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 100px;
+    z-index: 1;
+    color: white;
+}
+
+.dropdowns{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles related to the footer part */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #000000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-section p,
+.footer-section a {
+    text-decoration: none;
+    margin: 5px 0;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-section p{
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.leffff{
+    margin-left: 30%;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.footer-section ul li:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #474747;
+}
+
+.footer-bottom p {
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+i{
+    margin-right: 4%;
+}
+
+.footer-section h5{
+    text-align: center;
+}
+
+
+
+
+
+/* Code for the mobile reponsive (600px) */
+@media screen and (max-width:600px){
+    .container img{
+        max-width: 100%;
+        height: 100vh;
+    }
+    body{
+        max-width: 100%;
+    }
+    .container h1{
+        font-size: 60px;
+        padding-top: 30%;
+    }
+    .container p{
+	    font-size: 20px
+    }
+    .image-style{
+        display: block;
+        width: 100%;
+    }
+    .footer-container{
+        display:block;
+    }
+}
